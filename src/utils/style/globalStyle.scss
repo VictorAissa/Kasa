@@ -1,0 +1,21 @@
+@import "./variables.scss";
+
+body {
+    font-family: montserrat, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+main {
+    margin: $body_margin;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}

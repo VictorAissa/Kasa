@@ -1,0 +1,24 @@
+@import "../../utils/style/variables.scss";
+
+.banner_container {
+    width: 100%;
+    height: 110px;
+    min-width: calc($min_mobile_vw - (2 * $body_margin));
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: right;
+    }
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(5%, -50%);
+        z-index: 10;
+        color: #ffffff;
+    }
+}

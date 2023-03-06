@@ -1,0 +1,26 @@
+@import "../../utils/style/variables.scss";
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    .logo_link {
+        width: 145px;
+        min-width: 145px;
+    }
+
+    nav {
+        display: flex;
+        align-items: flex-end;
+
+        .nav_link {
+            margin: 10px;
+            color: $primary;
+            border-bottom: 1px solid transparent;
+            &:hover {
+                cursor: pointer;
+                border-bottom: 1px solid $primary;
+            }
+        }
+    }
+}

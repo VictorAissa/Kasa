@@ -12,6 +12,8 @@ import Home from "./pages/Home/Home";
 import Property from "./pages/Property/Property";
 import About from "./pages/About/About";
 import Error from "./pages/Error/Error";
+import "./utils/style/normalizer.scss";
+import "./utils/style/globalStyle.scss";
 
 // const router = createBrowserRouter([
 //     {
