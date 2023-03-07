@@ -38,9 +38,9 @@ const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/" element={<RootLayout />}>
             <Route index element={<Home />} />
-            <Route path="property" element={<Property />} />
+            <Route path="property/:id" element={<Property />} />
             <Route path="about" element={<About />} />
-            <Route path="Error" element={<Error />} />
+            <Route path="*" element={<Error />} />
         </Route>
     )
 );
