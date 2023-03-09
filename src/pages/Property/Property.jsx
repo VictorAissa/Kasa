@@ -1,3 +1,4 @@
+import { useParams } from "react-router-dom";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import Ratings from "../../components/Ratings/Ratings";
 import Collapse from "../../components/Collapse/Collapse";
@@ -6,10 +7,11 @@ function Property() {
     const propertyTitle = "Paris center, on the romantic Canal Saint-Martin";
     const descriptionText = "Lorem ipsum";
     const equipmentText = "Lorem ipsum";
+    const { id } = useParams();
 
     return (
         <div className="property_container">
-            <Slideshow />
+            <Slideshow id={id} />
             <section className="property_content">
                 <header>
                     <h1>{propertyTitle}</h1>

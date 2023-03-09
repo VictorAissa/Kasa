@@ -1,10 +1,10 @@
 import "./Banner.scss";
 
-function Banner({ backgroundImage, altImage, title }) {
+function Banner({ backgroundImage, altImage, title, bannerHeight }) {
     return (
-        <div className="banner_container">
+        <div className="banner_container" style={bannerHeight}>
             <img src={backgroundImage} alt={altImage} />
-            <h1>{title}</h1>
+            {title ? <h1>{title}</h1> : null}
         </div>
     );
 }

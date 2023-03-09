@@ -10,24 +10,30 @@ function Home() {
     const { data, error } = useFetch(
         "https://jsonplaceholder.typicode.com/photos?_limit=20"
     );
-    console.log(data);
+    const homeBannerHeight =
+        window.screen.width < 500 ? { height: "110px" } : { height: "220px" };
 
     return (
         <div className="home_container">
-            <div className="home_banner_wrapper">
-                <Banner
-                    backgroundImage={homeBannerBackground}
-                    altImage={bannerAltImage}
-                    title={bannerTitle}
-                />
-            </div>
+            <Banner
+                backgroundImage={homeBannerBackground}
+                altImage={bannerAltImage}
+                title={bannerTitle}
+                bannerHeight={homeBannerHeight}
+            />
+
             {error ? (
                 <div className="error_container">
                     Une erreur est survenue 😥
                 </div>
             ) : (
                 data.map((property) => (
-                    <Card cardCover={property.url} cardTitle={property.title} />
+                    <Card
+                        key={`card-${property.id}`}
+                        cardCover={property.thumbnailUrl}
+                        cardTitle={property.title}
+                        cardId={property.id}
+                    />
                 ))
             )}
         </div>

@@ -7,13 +7,12 @@ function About() {
     const bannerAltImage = "Paysage montagneux";
     return (
         <div className="about_container">
-            <div className="about_banner_wrapper">
-                <Banner
-                    backgroundImage={aboutBannerBackground}
-                    altImage={bannerAltImage}
-                    title={null}
-                />
-            </div>
+            <Banner
+                backgroundImage={aboutBannerBackground}
+                altImage={bannerAltImage}
+                title={null}
+            />
+
             <Collapse
                 collapseTitle={"Fiabilité"}
                 collapseText={
