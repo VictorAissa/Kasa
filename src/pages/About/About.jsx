@@ -5,12 +5,15 @@ import "./About.scss";
 
 function About() {
     const bannerAltImage = "Paysage montagneux";
+    const aboutBannerHeight =
+        window.screen.width < 500 ? { height: "auto" } : { height: "415px" };
+
     return (
         <div className="about_container">
             <Banner
                 backgroundImage={aboutBannerBackground}
                 altImage={bannerAltImage}
-                title={null}
+                bannerHeight={aboutBannerHeight}
             />
 
             <Collapse

@@ -4,7 +4,7 @@ import "./Header.scss";
 
 function Header() {
     return (
-        <div className="header_container">
+        <header className="header_container">
             <Link to="/" className="logo_link">
                 <img src={logo} alt="Logo Kasa"></img>
             </Link>
@@ -16,7 +16,7 @@ function Header() {
                     A PROPOS
                 </Link>
             </nav>
-        </div>
+        </header>
     );
 }
 

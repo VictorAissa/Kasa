@@ -7,9 +7,7 @@ import "./Home.scss";
 function Home() {
     const bannerAltImage = "Falaise";
     const bannerTitle = "Chez vous, partout et ailleurs";
-    const { data, error } = useFetch(
-        "https://jsonplaceholder.typicode.com/photos?_limit=20"
-    );
+    const { data, error } = useFetch("/logements.json");
     const homeBannerHeight =
         window.screen.width < 500 ? { height: "110px" } : { height: "220px" };
 
@@ -28,12 +26,7 @@ function Home() {
                 </div>
             ) : (
                 data.map((property) => (
-                    <Card
-                        key={`card-${property.id}`}
-                        cardCover={property.thumbnailUrl}
-                        cardTitle={property.title}
-                        cardId={property.id}
-                    />
+                    <Card key={`card-${property.id}`} propertyData={property} />
                 ))
             )}
         </div>
