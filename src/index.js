@@ -36,9 +36,9 @@ import "./utils/style/globalStyle.scss";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
-        <Route path="/" element={<RootLayout />}>
+        <Route path="/" element={<RootLayout />} /*errorElement={<Error />}*/>
             <Route index element={<Home />} />
-            <Route path="property/:id" element={<Property />} />
+            <Route exact path="property/:id" element={<Property />} />
             <Route path="about" element={<About />} />
             <Route path="*" element={<Error />} />
         </Route>

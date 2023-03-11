@@ -4,12 +4,13 @@ import "./Card.scss";
 
 function Card(props) {
     const [property, setProperty] = useState(props.propertyData);
-
     const propertyUrl = "/property/" + property.id;
+
     return (
         <figure className="card_container">
             <Link to={propertyUrl} className="card_link">
                 <img src={property.cover} alt={property.title} />
+                <div className="gradient"></div>
                 <figcaption>
                     <h2>{property.title}</h2>
                 </figcaption>

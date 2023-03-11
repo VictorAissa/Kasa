@@ -2,7 +2,6 @@
 
 .banner_container {
     width: 100%;
-
     min-width: calc($min_mobile_vw - (2 * $body_margin));
     border-radius: 10px;
     position: relative;
@@ -12,6 +11,7 @@
         height: 100%;
         object-fit: cover;
         object-position: right;
+        filter: brightness(0.8);
     }
     h1 {
         position: absolute;
