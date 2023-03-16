@@ -8,6 +8,12 @@ body {
 
 main {
     margin: $body_margin;
+    @media (min-width: $tablett) {
+        margin: 40px $tablett_body_margin;
+    }
+    @media (min-width: $desktop) {
+        margin: 40px $desktop_body_margin;
+    }
 }
 
 h1 {

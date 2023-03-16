@@ -3,20 +3,35 @@
 .header_container {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: $body_margin;
+    @media (min-width: $tablett) {
+        margin: 40px $tablett_body_margin;
+    }
+    @media (min-width: $desktop) {
+        margin: 40px $desktop_body_margin;
+    }
     .logo_link {
         width: 145px;
         min-width: 145px;
+        @media (min-width: $tablett) {
+            width: 210px;
+            min-width: 210px;
+        }
     }
-
     nav {
         display: flex;
         align-items: flex-end;
-
         .nav_link {
             margin: 10px;
             color: $primary;
             border-bottom: 1px solid transparent;
+            @media (min-width: $tablett) {
+                text-transform: lowercase;
+                font-size: 2.4rem;
+                &:first-letter {
+                    text-transform: uppercase;
+                }
+            }
             &:hover {
                 cursor: pointer;
                 border-bottom: 1px solid $primary;

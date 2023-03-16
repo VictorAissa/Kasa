@@ -19,7 +19,9 @@ function Collapse({ collapseTitle, collapseText }) {
                     }}
                 />
             </header>
-            {isDeployed ? <p>{collapseText}</p> : null}
+            {isDeployed ? (
+                <div className="collapse_content">{collapseText}</div>
+            ) : null}
         </article>
     );
 }
