@@ -1,20 +1,21 @@
 import Banner from "../../components/Banner/Banner";
-import aboutBannerBackground from "../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash.png";
 import Collapse from "../../components/Collapse/Collapse";
+import aboutBannerBackground from "../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash.png";
 import "./About.scss";
 
 function About() {
-    const bannerAltImage = "Paysage montagneux";
-    const aboutBannerHeight =
-        window.screen.width < 500 ? { height: "auto" } : { height: "415px" };
+    const aboutBannerContent = {
+        backgroundImage: aboutBannerBackground,
+        imageAlt: "Paysage montagneux",
+        height:
+            window.screen.width < 600
+                ? { height: "auto" }
+                : { height: "415px" },
+    };
 
     return (
         <div className="about_container">
-            <Banner
-                backgroundImage={aboutBannerBackground}
-                altImage={bannerAltImage}
-                bannerHeight={aboutBannerHeight}
-            />
+            <Banner bannerProps={aboutBannerContent} />
 
             <Collapse
                 collapseTitle={"Fiabilité"}

@@ -1,9 +1,14 @@
 @import "../../utils/style/variables.scss";
 
 .home_container {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
+    .cards_wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
     .error_container {
         display: flex;
         justify-content: center;
