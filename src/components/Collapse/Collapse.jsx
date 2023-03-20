@@ -21,7 +21,7 @@ function Collapse({ collapseTitle, collapseText }) {
                     }}
                 />
             </header>
-            {isDeployed ? (
+            {isDeployed && (
                 <div className="collapse_content">
                     {Array.isArray(collapseText) ? (
                         <ul>
@@ -37,7 +37,7 @@ function Collapse({ collapseTitle, collapseText }) {
                         collapseText
                     )}
                 </div>
-            ) : null}
+            )}
         </article>
     );
 }

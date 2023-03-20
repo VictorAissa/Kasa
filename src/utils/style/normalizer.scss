@@ -4,7 +4,12 @@
 *::after {
     box-sizing: border-box;
 }
-
+html,
+body,
+#root,
+.root_layout {
+    height: 100%;
+}
 /* Remove default margin */
 body,
 h1,

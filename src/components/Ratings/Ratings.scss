@@ -1,8 +1,15 @@
+@import "../../utils/style/variables.scss";
+
 .ratings_container {
     display: flex;
     gap: 5px;
+    @media (min-width: $tablett) {
+        position: absolute;
+        bottom: 10%;
+        right: 0;
+    }
     img {
-        width: 15px;
-        height: 15px;
+        width: clamp(15px, 3vw, 30px);
+        height: clamp(15px, 3vw, 30px);
     }
 }

@@ -8,6 +8,15 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
+        @media (min-width: $tablett) {
+            grid-template-columns: 1fr 1fr;
+            background-color: $secondary_background;
+            border-radius: 10px;
+            padding: 3vw 2%;
+        }
+        @media (min-width: $desktop) {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
     .error_container {
         display: flex;

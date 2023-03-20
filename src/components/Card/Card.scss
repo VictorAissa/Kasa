@@ -1,14 +1,23 @@
 @import "../../utils/style/variables.scss";
 
 .card_container {
-    width: calc(100vw - (2 * $body_margin));
+    width: 100%;
     height: calc((100vw - (2 * $body_margin)) * 0.75);
     min-width: calc($min_mobile_vw - (2 * $body_margin));
     min-height: calc(($min_mobile_vw - (2 * $body_margin)) * 0.75);
     border-radius: 10px;
+    display: flex;
+    justify-self: center;
     position: relative;
     overflow: hidden;
-
+    @media (min-width: $tablett) {
+        height: calc(((100vw - (2 * $tablett_body_margin)) / 2) * 0.75);
+        min-width: auto;
+        min-height: auto;
+    }
+    @media (min-width: $desktop) {
+        height: calc(((100vw - (2 * $tablett_body_margin)) / 3) * 0.75);
+    }
     .card_link {
         display: block;
         width: 100%;

@@ -1,6 +1,12 @@
 @import "./variables.scss";
 
+.root_layout {
+    display: flex;
+    flex-direction: column;
+}
 body {
+    display: flex;
+    flex-direction: column;
     font-family: montserrat, sans-serif;
     font-size: 1.2rem;
     font-weight: 400;

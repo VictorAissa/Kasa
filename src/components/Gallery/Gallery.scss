@@ -1,3 +1,5 @@
+@import "../../utils/style/variables.scss";
+
 .gallery_container {
     width: 100%;
     height: 255px;
@@ -5,6 +7,15 @@
     display: grid;
     overflow: hidden;
     position: relative;
+    @media (min-width: $tablett) {
+        height: 320px;
+        border-radius: 10px;
+    }
+    @media (min-width: $desktop) {
+        height: 415px;
+        border-radius: 20px;
+    }
+
     img {
         height: 100%;
         object-fit: cover;
@@ -19,15 +30,28 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 6px;
-        img {
+        padding: 0 2%;
+        .arrow {
             width: 12px;
             height: 20px;
+            @media (min-width: $tablett) {
+                width: 24px;
+                height: 40px;
+            }
+            @media (min-width: $desktop) {
+                width: 47px;
+                height: 80px;
+            }
         }
         .numbering_container {
             align-self: flex-end;
+            font-size: 1.8rem;
+            font-weight: 500;
             color: #ffffff;
             display: none;
+            @media (min-width: $tablett) {
+                display: flex;
+            }
         }
     }
 }
