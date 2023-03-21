@@ -53,9 +53,9 @@ function Gallery(props) {
                             previousSlide();
                         }}
                     />
-                    <div className="numbering_container">
+                    <span className="numbering_container">
                         {currentSlide + 1}/{totalSlides}
-                    </div>
+                    </span>
                     <img
                         className="arrow"
                         src={arrowRight}

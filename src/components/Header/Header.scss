@@ -15,26 +15,26 @@
         min-width: 145px;
         @media (min-width: $tablett) {
             width: 180px;
-            min-width: 180px;
         }
         @media (min-width: $desktop) {
             width: 210px;
-            min-width: 210px;
         }
     }
     nav {
         display: flex;
         align-items: flex-end;
+        @media (min-width: $desktop) {
+            gap: 30px;
+        }
         .nav_link {
             margin: 10px;
             color: $primary;
+            text-transform: uppercase;
+            font-weight: 500;
             border-bottom: 1px solid transparent;
             @media (min-width: $tablett) {
-                text-transform: lowercase;
+                text-transform: capitalize;
                 font-size: 1.8rem;
-                &:first-letter {
-                    text-transform: uppercase;
-                }
             }
             @media (min-width: $desktop) {
                 font-size: 2.4rem;

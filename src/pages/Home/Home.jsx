@@ -9,7 +9,7 @@ function Home() {
     const [data, setData] = useState([]);
     const [error, setError] = useState(false);
 
-    // Déclaration d'un objet contenant les props de la banniere de la page d'accueil
+    // Déclaration d'un objet contenant les propriétés de la banniere de la page d'accueil
     const homeBannerContent = {
         backgroundImage: homeBannerBackground,
         imageAlt: "Falaise",

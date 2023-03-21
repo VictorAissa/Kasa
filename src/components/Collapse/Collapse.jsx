@@ -4,8 +4,6 @@ import arrowUp from "../../assets/arrow_up.png";
 import "./Collapse.scss";
 
 function Collapse({ collapseTitle, collapseText }) {
-    // const [title, setTitle] = useState(props.collapseTitle);
-    // const [text, setText] = useState(props.collapseText);
     const [isDeployed, setIsDeployed] = useState(false);
     const arrow = isDeployed ? arrowUp : arrowDown;
 

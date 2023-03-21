@@ -13,12 +13,12 @@ body {
 }
 
 main {
-    margin: $body_margin;
+    margin: 0 $body_margin 20px $body_margin;
     @media (min-width: $tablett) {
-        margin: 40px $tablett_body_margin;
+        margin: 0 $tablett_body_margin 20px $tablett_body_margin;
     }
     @media (min-width: $desktop) {
-        margin: 40px $desktop_body_margin;
+        margin: 0 $desktop_body_margin 30px $desktop_body_margin;
     }
 }
 
