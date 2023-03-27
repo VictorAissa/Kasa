@@ -21,6 +21,7 @@ function Collapse({ collapseTitle, collapseText }) {
             </header>
             {isDeployed && (
                 <div className="collapse_content">
+                    {/* Disposition du contenu de Collapse en liste s'il contient plusieurs éléments */}
                     {Array.isArray(collapseText) ? (
                         <ul>
                             {collapseText.map((equipment) => {

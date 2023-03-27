@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getData } from "../../utils/functions";
@@ -33,7 +32,11 @@ function Property() {
     return (
         <div className="property_container">
             {/* Affichage d'un message d'erreur le cas échéant */}
-            {error && <div>Une erreur est survenue 😥</div>}
+            {error && (
+                <div className="error_container">
+                    Une erreur est survenue 😥
+                </div>
+            )}
             <Gallery data={data} />
             <section className="property_content">
                 <header>
@@ -48,7 +51,6 @@ function Property() {
                     </div>
                     <Ratings ratingNumber={data?.rating} />
                     <div className="identity_container">
-                        {/* Séparation des nom et prénom de l'hôte avant affichage sur deux lignes */}
                         <p className="host_name">
                             {data?.host.name.split(" ")[0]}
                             <br />

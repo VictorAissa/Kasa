@@ -4,23 +4,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: $primary;
     padding: 0 10%;
     .error_code {
-        color: $primary;
         font-size: 9.6rem;
         font-weight: 700;
         margin-top: 130px;
     }
     .error_comment {
-        color: $primary;
         font-size: 1.8rem;
         font-weight: 500;
         text-align: center;
     }
     .error_link {
-        color: $primary;
         font-size: 1.4rem;
         font-weight: 500;
+        color: $primary;
         text-decoration: underline;
         margin-top: 130px;
         cursor: pointer;

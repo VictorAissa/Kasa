@@ -6,7 +6,6 @@ import {
     RouterProvider,
     Route,
 } from "react-router-dom";
-// import Router from "./components/Router/Router";
 import RootLayout from "./layouts/RootLayout";
 import Home from "./pages/Home/Home";
 import Property from "./pages/Property/Property";
@@ -15,28 +14,9 @@ import Error from "./pages/Error/Error";
 import "./utils/style/normalizer.scss";
 import "./utils/style/globalStyle.scss";
 
-// const router = createBrowserRouter([
-//     {
-//         path: "/",
-//         element: <Home />,
-//     },
-//     {
-//         path: "/property",
-//         element: <Property />,
-//     },
-//     {
-//         path: "/about",
-//         element: <About />,
-//     },
-//     {
-//         path: "*",
-//         element: <Error />,
-//     },
-// ]);
-
 const router = createBrowserRouter(
     createRoutesFromElements(
-        <Route path="/" element={<RootLayout />} /*errorElement={<Error />}*/>
+        <Route path="/" element={<RootLayout />}>
             <Route index element={<Home />} />
             <Route exact path="property/:id" element={<Property />} />
             <Route path="about" element={<About />} />

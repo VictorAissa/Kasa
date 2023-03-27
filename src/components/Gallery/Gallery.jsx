@@ -25,7 +25,7 @@ function Gallery(props) {
         );
 
     return (
-        // MEP de l'ensemble des images dans le container du slider en ligne (grid)
+        // Mise en place de l'ensemble des images en ligne (grid) dans le container du slider
         <div
             className="gallery_container"
             style={{ gridTemplate: `100% / repeat(${totalSlides}, 100%)` }}
@@ -34,7 +34,7 @@ function Gallery(props) {
                 <img
                     key={`property ${property?.id} - photo ${index}`}
                     src={picture}
-                    alt={property?.title}
+                    alt={property?.title + index}
                     // Translation des images de la valeur de leur largeur * la valeur de la slide courante
                     style={{
                         transform: `translateX(-${currentSlide * 100}%)`,
@@ -43,7 +43,7 @@ function Gallery(props) {
             ))}
 
             {/* Création des éléments de navigation entre les slides si le slider comprend plus d'une image */}
-            {totalSlides > 1 ? (
+            {totalSlides > 1 && (
                 <nav>
                     <img
                         className="arrow"
@@ -65,7 +65,7 @@ function Gallery(props) {
                         }}
                     />
                 </nav>
-            ) : null}
+            )}
         </div>
     );
 }

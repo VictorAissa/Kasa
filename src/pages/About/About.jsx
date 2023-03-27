@@ -4,7 +4,7 @@ import aboutBannerBackground from "../../assets/kalen-emsley-Bkci_8qcdvQ-unsplas
 import "./About.scss";
 
 function About() {
-    // Déclaration d'un objet contenant les props de la banniere de la page About
+    // Objet contenant les props de la banniere de la page About
     const aboutBannerContent = {
         backgroundImage: aboutBannerBackground,
         imageAlt: "Paysage montagneux",
