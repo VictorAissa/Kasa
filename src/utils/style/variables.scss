@@ -15,3 +15,13 @@ $desktop_body_margin: 100px;
 
 $tablett: 600px;
 $desktop: 1024px;
+
+// Mixins
+
+@mixin generic_message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-size: 1.4rem;
+}

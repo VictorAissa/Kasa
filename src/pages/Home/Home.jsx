@@ -39,9 +39,9 @@ function Home() {
 
             {/* Affichage d'un message d'erreur le cas échéant ou des cartes dans le cas contraire */}
             {error ? (
-                <div className="error_container">
+                <span className="error_message">
                     Une erreur est survenue 😥
-                </div>
+                </span>
             ) : (
                 <div className="cards_wrapper">
                     {data?.map((property) => (

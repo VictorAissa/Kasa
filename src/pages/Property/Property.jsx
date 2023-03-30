@@ -33,9 +33,9 @@ function Property() {
         <div className="property_container">
             {/* Affichage d'un message d'erreur le cas échéant */}
             {error && (
-                <div className="error_container">
+                <span className="error_message">
                     Une erreur est survenue 😥
-                </div>
+                </span>
             )}
             <Gallery data={data} />
             <section className="property_content">
