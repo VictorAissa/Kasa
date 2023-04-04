@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Kasa/static/css/main.595dfa1a.css",
-    "main.js": "/Kasa/static/js/main.b726795b.js",
-    "static/media/kalen-emsley-Bkci_8qcdvQ-unsplash.png": "/Kasa/static/media/kalen-emsley-Bkci_8qcdvQ-unsplash.abab3f12f4cb82f1dfa1.png",
-    "static/media/cliff_image.png": "/Kasa/static/media/cliff_image.d00ae7dd3ef927bb988d.png",
-    "index.html": "/Kasa/index.html",
-    "main.595dfa1a.css.map": "/Kasa/static/css/main.595dfa1a.css.map",
-    "main.b726795b.js.map": "/Kasa/static/js/main.b726795b.js.map"
+    "main.css": "/static/css/main.595dfa1a.css",
+    "main.js": "/static/js/main.ce50e226.js",
+    "static/media/kalen-emsley-Bkci_8qcdvQ-unsplash.png": "/static/media/kalen-emsley-Bkci_8qcdvQ-unsplash.abab3f12f4cb82f1dfa1.png",
+    "static/media/cliff_image.png": "/static/media/cliff_image.d00ae7dd3ef927bb988d.png",
+    "index.html": "/index.html",
+    "main.595dfa1a.css.map": "/static/css/main.595dfa1a.css.map",
+    "main.ce50e226.js.map": "/static/js/main.ce50e226.js.map"
   },
   "entrypoints": [
     "static/css/main.595dfa1a.css",
-    "static/js/main.b726795b.js"
+    "static/js/main.ce50e226.js"
   ]
 }
